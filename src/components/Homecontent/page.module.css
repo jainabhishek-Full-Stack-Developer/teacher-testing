@@ -1,0 +1,474 @@
+.heroSectionBgContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/hero-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    margin-top:  calc(13vh + 0px);
+    ;
+}
+
+.headerMenuContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerMenuBarButton {
+    display: none;
+}
+.headerMainWrapper
+{
+    position: relative;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 13vh;
+    top: 0;
+    z-index: 100;
+}
+.headerMobileMenu
+{
+    position: absolute;
+    top:0;
+    width: 250px;
+    background-color: #fff;
+    height: 100vh;
+}
+
+
+
+@media all and (max-width:1024px) {
+    .headerMenuContainer {
+        display: none;
+    }
+
+    .headerMenuBarButton {
+        display: block;
+    }
+    .headerMobileMenuContainer
+    {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     
+    }
+
+}
+
+
+/* vertical timeline */
+.psSectionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.psSectionHeader p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.psSectionHeader h4 {
+    font-weight: 400;
+    color: #000;
+    font-size: 30px;
+    width: 75%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.psBlockContent {
+    text-align: center;
+
+}
+
+.psBlockContent h4 {
+    color: #000;
+
+}
+
+.psBlockDesc {
+    margin-top: 30px !important;
+}
+
+.psBlockDesc p {
+    font-size: 16px;
+    color: #666;
+}
+
+.vendorFeatureIcon {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.psSectionContent {
+    padding: 40px 40px 10px 40px;
+}
+
+.verticalTimelineContainer {
+    background-color: #eee;
+    padding-top: 20px;
+    margin-top: 80px;
+
+}
+
+.psBlockMilestone {
+    position: relative;
+    margin-bottom: 300px;
+}
+
+.psBlockMilestone .psBlockDot {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.psBlockMilestone .psBlockDot:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.psBlockMilestone .psBlockYearNumber {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.psBlockMilestone .psBlockYear {
+    text-align: center;
+}
+
+.psBlockMilestone .psBlockJourney {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-bottom: 50px;
+    min-width: 500px;
+    max-width: 500px;
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.psBlockMilestone .psBlockJourney:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.psBlockMilestone .psBlockJourney:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-bottom: 50px solid gray;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.psBlockMilestone .psBlockJourney .psBlockThumbnail {
+    float: left;
+    max-width: 100px;
+}
+
+.psBlockMilestone .psBlockJourney .psBlockThumbnail img {
+    border-radius: 50%;
+}
+
+.psBlockMilestone .psBlockJourney .psBlockContent {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    float: right;
+    min-height: 100px;
+    width: calc(100% - 100px);
+}
+
+.psBlockMilestone .psBlockJourney .psBlockContent h4 {
+    font-weight: 500;
+    color: #000;
+    font-size: 20px;
+}
+
+.psBlockMilestone.active .psBlockDot:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.psBlockMilestone.active .psBlockJourney {
+    display: block;
+}
+
+.psBlockMilestones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.psBlockMilestones>* {
+    width: 100%;
+}
+
+.psBlockContactInfo {
+    max-width: 270px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.psBlockContactInfo h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.psBlockContactInfo p a {
+    display: block;
+}
+
+.psBlockVendorMilestone {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+.psBlockVendorMilestone:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 110%;
+    width: 5px;
+    background-color: #ff5c00;
+}
+
+.psBlockVendorMilestone .psBlockLeft,
+.psBlockVendorMilestone .psBlockRight {
+    width: 100%;
+}
+
+.psBlockVendorMilestone .psBlockLeft {
+    padding-right: 140px;
+}
+
+.psBlockVendorMilestone .psBlockLeft h4 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.2em;
+}
+
+.psBlockVendorMilestone .psBlockLeft ul {
+    padding-left: 20px;
+}
+
+.psBlockVendorMilestone .psBlockLeft ul li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.psBlockVendorMilestone .psBlockRight {
+    text-align: right;
+}
+
+.psBlockNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #ff5c00;
+    border-radius: 50%;
+}
+
+.psBlockVendorMilestone .psBlockNumber span {
+    font-size: 48px;
+    color: #ff5c00;
+}
+
+.psBlockVendorMilestone.reverse {
+    flex-flow: row-reverse nowrap;
+}
+
+.psBlockVendorMilestone.reverse .psBlockLeft {
+    padding-left: 140px;
+    padding-right: 0;
+}
+
+.psBlockVendorMilestone.reverse .psBlockRight {
+    text-align: left;
+}
+
+.psBlockVendorMilestone:last-child:before {
+    display: none;
+}
+
+.psBlockRight img {
+    margin-top: 0px !important;
+    width: 500px !important;
+    height: 400px !important;
+}
+
+@media (max-width: 991px) {
+    .psBlockVendorMilestone .psBlockLeft {
+        padding-right: 80px;
+    }
+
+    .psBlockVendorMilestone .psBlockLeft h4 {
+        font-size: 18px;
+    }
+
+    .psBlockVendorMilestone .psBlockLeft ul li {
+        font-size: 14px;
+    }
+
+    .psBlockVendorMilestone .psBlockRight {
+        padding-left: 80px;
+    }
+
+    .psBlockVendorMilestone .psBlockNumber {
+        width: 80px;
+        height: 80px;
+    }
+
+    .psBlockVendorMilestone .psBlockNumber span {
+        font-size: 24px;
+    }
+
+    .psBlockVendorMilestone.reverse .psBlockLeft {
+        padding-left: 80px;
+    }
+
+    .psBlockVendorMilestone.reverse .psBlockRight {
+        padding-left: 0;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .jumbotron-heading {
+        font-size: 28px;
+        width: 300px;
+        max-width: 400px;
+    }
+
+    .psBlockVendorMilestone {
+        flex-flow: column-reverse wrap;
+        padding-left: 100px;
+    }
+
+    .psBlockVendorMilestone:before {
+        left: 40px;
+    }
+
+    .psBlockVendorMilestone .psBlockNumber {
+        left: 0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .psBlockVendorMilestone .psBlockLeft {
+        padding: 0;
+    }
+
+    .psBlockVendorMilestone .psBlockLeft h4 {
+        font-size: 18px;
+    }
+
+    .psBlockVendorMilestone .psBlockRight {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 40px 0 0;
+    }
+
+    .psBlockVendorMilestone .psBlockRight img {
+        max-height: 150px;
+    }
+
+    .psBlockVendorMilestone.reverse {
+        flex-flow: column-reverse wrap;
+    }
+
+    .psBlockVendorMilestone.reverse .psBlockLeft {
+        padding: 0;
+    }
+
+    .psBlockVendorMilestone.reverse .psBlockRight {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .psBlockVendorMilestone {
+        padding-left: 60px;
+    }
+
+    .psBlockVendorMilestone:before {
+        left: 25px;
+    }
+
+    .psBlockVendorMilestone .psBlockNumber {
+        width: 50px;
+        height: 50px;
+    }
+
+    .psBlockVendorMilestone .psBlockNumber span {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    .psBlockContent {
+        margin-bottom: 50px;
+    }
+
+    .psSectionHeader h4 {
+        width: 100%;
+    }
+
+}

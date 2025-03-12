@@ -1,0 +1,31 @@
+.privacyPolicyBgContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/images/privacy-policy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .privacyPolicyBgContainer {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .privacyPolicyBgContainer {
+        height: 30vh;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacyPolicyBgContainer {
+        height: 50vh;
+        background-size: cover;
+    }
+}
